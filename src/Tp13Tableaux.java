@@ -1,6 +1,17 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * Ecrire un programme Java qui permet à l’utilisateur de déclarer 3 array d’entiers.
+ * Ces tableaux ne doivent pas forcément avoir la même taille
+ * Le programme doit ensuite fournir afficher les 3 tableaux en format [element1, element2,...,elementN] et
+ * la somme de tous les éléments multiples 3 dans les 3 tableaux.
+ * Ex :
+ * T1 : [ 2, 6, 8, 15,39,11 ]
+ * T2 : [ 21, 33, 12, 19,0 ]
+ * T3 : [ 17, 18, 46 ]
+ * S = 6+15+39+21+33+12+18 = 144
+ */
 public class Tp13Tableaux {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);

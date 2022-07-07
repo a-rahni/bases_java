@@ -1,6 +1,17 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * Ecrire un algorithme qui demande l’utilisateur de créer 2 listes composées de nombres.
+ * Ensuite, remplir ces 2 listes à partir de la lecture du clavier tout en sachant que ces 2 listes
+ * doivent avoir la même taille(aussi définie par une lecture).Puis, calculer la liste résultante  qui va
+ * être construite par la somme des éléments de la première liste et avec l’inverse de la 2ème liste.
+ * Exemple :
+ * Liste 1 : [ 2 , 4 , 5 , 7 ,8 ]
+ * Liste 2 : [ 3 , 7 , 2 , 5 , 6 ]
+ * List 3(résultante) : [ 8(2+6) , 9(4+5), 7(5+2) , 14(7+7), 11(8+3) ]
+ */
+
 public class Tp15Tableaux {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
