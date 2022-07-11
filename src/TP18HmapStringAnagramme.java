@@ -45,6 +45,11 @@ public class TP18HmapStringAnagramme {
             System.out.println(" les deux chaines ne sont pas anagrammes");
         }
 
+        // autres facons: tester la longeur des deux chaines formaté si diff NOK
+        // avant de faire la boucle, tester la longueur des deux Hmap
+
+        // autre facons: utiliser strings: tri puis comparer les deux chaine avec equal
+
     }
 
     public static HashMap<Character,Integer> ComputeNbrOccurences(String chaine){

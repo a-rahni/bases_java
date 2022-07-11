@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class StringType {
     public static void main(String[] args) {
 
@@ -17,6 +19,22 @@ public class StringType {
         System.out.println(dev); // // développeu
 
         //...
+
+        Scanner input = new Scanner(System.in);
+        // pool des litteraux
+        String a="jean";
+        String b="jean";
+        System.out.println("a==b : "+ (a==b)); // true
+
+        String c= input.nextLine();
+        //String c= input.nextLine().intern();
+        //c=c.intern(); // --> utilise memeoire interne (pool des litereaux
+        System.out.println("a==c : "+ (a==b)); // false   // true avec c.intern
+
+        String x = input.nextLine(); // christian
+        //x=x.intern();
+        String y = "christian";
+        System.out.println("x==y : "+ (a==b)); // false   // true avec x.intern
 
     }
 }
