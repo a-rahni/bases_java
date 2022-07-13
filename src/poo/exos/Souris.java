@@ -4,8 +4,8 @@ package poo.exos;
  * enoncé de l'exercice est à la fin du fichier
  * */
 public class Souris {
-        private final int ESPERANCE_VIE_DEFAUT = 36;
-        private final int AGE_DEFAUT = 0;
+        public static final int ESPERANCE_VIE_DEFAUT = 36;
+        public  static final int AGE_DEFAUT = 0;
         private int poids; // gramme
         private String couleur;
         private int age; // en mois
@@ -22,23 +22,11 @@ public class Souris {
         System.out.println("une nouvelle souris!");
     }
     public Souris( int poids, String couleur,int age){
-        this.poids = poids;
-        this.couleur = couleur;
-        this.age = age;
-        this.esperanceVie = ESPERANCE_VIE_DEFAUT;
-        this.clonee = false;
-
-        System.out.println("une nouvelle souris!");
+        this(poids,couleur,age,ESPERANCE_VIE_DEFAUT);
     }
 
     public Souris( int poids, String couleur){
-        this.poids = poids;
-        this.couleur = couleur;
-        this.age = AGE_DEFAUT;
-        this.esperanceVie = ESPERANCE_VIE_DEFAUT;
-        this.clonee = false;
-
-        System.out.println("une nouvelle souris!");
+        this(poids,couleur,AGE_DEFAUT,ESPERANCE_VIE_DEFAUT);
     }
 
         // constructeur de copie
@@ -46,7 +34,7 @@ public class Souris {
         this.poids = souris.poids;
         this.couleur = souris.couleur;
         this.age = AGE_DEFAUT;
-        this.esperanceVie = (4 * souris.esperanceVie) / 5;
+        this.esperanceVie = (int)(souris.esperanceVie * 0.8);
         this.clonee = true;
 
         System.out.println("Clonage d'une souris!");
@@ -59,10 +47,8 @@ public class Souris {
 
     public void vieillir () {
         this.age++;
-        if (this.clonee) {
-            if (this.age >= (esperanceVie / 2)) {
-                this.couleur = "Verte";
-            }
+        if ((this.clonee) &&(this.age >= (esperanceVie / 2))) {
+            this.couleur = "Verte";
         }
     }
 
