@@ -30,5 +30,8 @@ public class MainTpHeritage {
             System.out.println(p);
         }
 
+        //int nombreEtudiants = (int)listePersonnel.stream().filter(e-> e instanceof Etudiant).count();
+        //int nombreEtudiants = (int)listePersonnel.stream().filter(e-> e.estEtudiant()).count();
+
     }
 }

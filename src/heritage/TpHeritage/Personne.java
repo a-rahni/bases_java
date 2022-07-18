@@ -9,6 +9,10 @@ public abstract class Personne {
         this.anneeEntree=anneeEntree;
     }
 
+    /** pour le but de montrer le polymorphisme
+     * si on applique le principe de segregation d'interface, un enseignant n 'a pas besoin
+     * d'attribut pour savoir qu'iln 'est pas étudiant
+     * */
     public abstract boolean estEtudiant();
 
     @Override
