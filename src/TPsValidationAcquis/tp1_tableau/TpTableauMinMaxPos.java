@@ -1,6 +1,18 @@
 package TPsValidationAcquis.tp1_tableau;
 
 import java.util.Arrays;
+/**
+Écrire un programme Java permet de déclarer un tableau d’entiers en Java, et qui ensuite va afficher le plus
+ grand nombre, sa position; le plus petit nombre, et sa position.
+ Dans l’affichage, il faut afficher le tableau en format [element1, element2,...,elementN], et dans l’affiche du
+ plus grand nombre faire afficher le text(PG) et pour le plus petit(PP):
+ Ex :
+        Tb : [ 12,3,5,6,-3 ]
+        Résultat:
+        Tb : [12(PG) , 3, 5, 6, -3(PP)]
+        Plus grand : 12
+        Plus petit : -3
+*/
 
 public class TpTableauMinMaxPos {
     public static void main(String[] args) {
