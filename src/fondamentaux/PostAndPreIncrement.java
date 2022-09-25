@@ -28,6 +28,14 @@ public class PostAndPreIncrement {
 //        Exemple
         int c=2;
         c=c++;
-        System.out.println(c);
+        System.out.println(c); // 2
+
+        c=++c;
+        System.out.println(c); // 3
+
+        System.out.println(++c); // 4
+
+        System.out.println(c++); // 4
+
     }
 }
