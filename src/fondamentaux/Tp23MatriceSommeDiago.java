@@ -32,6 +32,7 @@ public class Tp23MatriceSommeDiago {
                 {1,5,1,0},
                 {1,1,1,1}
         };
+        //System.out.println("test: "+ Arrays.deepToString(tab));
 
         for (int[] e: tab){
             System.out.println(Arrays.toString(e));
