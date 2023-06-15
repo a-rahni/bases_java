@@ -1,6 +1,6 @@
 package TPsValidationAcquis.tp5TabCaractereMajMin;
 
-import com.sun.org.apache.bcel.internal.classfile.SourceFile;
+//import com.sun.org.apache.bcel.internal.classfile.SourceFile;
 
 import java.util.Arrays;
 

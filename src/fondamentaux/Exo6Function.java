@@ -49,6 +49,7 @@ public class Exo6Function {
             }
         }
         return areAnagrammes;
+        // return occurenceCh1.equals(occurenceCh2); // ca fonctionne car le type key et value (string et integer) implemente bien equals
     }
 
     public static void main(String[] args) {
